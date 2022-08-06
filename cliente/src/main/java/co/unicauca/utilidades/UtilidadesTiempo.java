@@ -1,4 +1,4 @@
-package co.unicauca.cliente.utilidades;
+package co.unicauca.utilidades;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -22,7 +22,7 @@ public class UtilidadesTiempo {
         return bandera;
     }
 
-    public String obtenerFechaActualString() {
+    public static String obtenerFechaActualString() {
         LocalDate fecha = LocalDate.now();
 
         String cadena = fecha.getYear() + "-" + fecha.getMonthValue() + "-" + fecha
@@ -32,7 +32,7 @@ public class UtilidadesTiempo {
 
     }
 
-    public String dateToString(int dia, int mes, int anio) {
+    public static String dateToString(int dia, int mes, int anio) {
         return (anio + "-" + mes + "-" + dia);
     }
 }

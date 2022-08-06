@@ -2,6 +2,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "Launch ClienteApplication",
+        "request": "launch",
+        "mainClass": "co.unicauca.cliente.ClienteApplication",
+        "projectName": "cliente"
+    },
+    {
+        "type": "java",
         "name": "Launch ServidorDeNot",
         "request": "launch",
         "mainClass": "co.unicauca.servidor.servicios.ServidorDeNot",

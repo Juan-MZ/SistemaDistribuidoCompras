@@ -1,13 +1,13 @@
 package co.unicauca.cliente;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.io.IOException;
 
-@SpringBootApplication
+import co.unicauca.vista.menu;
+
 public class ClienteApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ClienteApplication.class, args);
-	}
+    public static void main(String[] args) throws IOException {
+        menu.iniciarMenu();
+    }
 
 }
