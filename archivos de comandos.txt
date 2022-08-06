@@ -1,0 +1,5 @@
+Comando para generar los archivos CORBA
+"C:\Program Files\Java\jdk1.8.0_202\bin\idlj" -fall interface.idl
+
+Comando para lanzar el NS
+"C:\Program Files\Java\jdk1.8.0_202\bin\orbd" -ORBInitialHost localhost -ORBInitialPort 2020

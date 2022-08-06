@@ -1,0 +1,25 @@
+module sop_corba{
+    interface ControladorAlertaInt{
+
+        struct CompraDTO{
+            long long codigoCompra;
+            long long idComprador;
+            string tipoIdentificacion;
+            double valor;
+            string lugarCompra;
+            string fecha;
+            long long idEmpresa;
+        }; 
+
+        typedef sequence<CompraDTO> ListCompras;
+
+        struct AlertaDTO{
+            long long codigoAlerta;
+            long long idComprador;
+            ListCompras compras;
+            double valorAcumulado;
+        };
+		
+		boolean registrarAlerta( in AlertaDTO objAlerta);
+    };      
+};

@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+        "type": "java",
+        "name": "Launch ServidorDeNot",
+        "request": "launch",
+        "mainClass": "co.unicauca.servidor.servicios.ServidorDeNot",
+        "projectName": "servidornotificaciones"
+    },
+    {
+        "type": "java",
+        "name": "Launch ServerApp",
+        "request": "launch",
+        "mainClass": "co.unicauca.ServerApp",
+        "projectName": "servidordeclaraciones"
+    },
+    {
+        "type": "java",
+        "name": "Spring Boot-ServidordeclaracionesApplication<servidordeclaraciones>",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "mainClass": "co.unicauca.ServidordeclaracionesApplication",
+        "projectName": "servidordeclaraciones",
+        "args": "",
+        "envFile": "${workspaceFolder}/.env"
+    }
+]
+}
